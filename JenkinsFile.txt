@@ -1,0 +1,15 @@
+pipeline{
+	agent{label windows},
+     stages{
+			stage('say Hello'){
+                        	steps{
+                               		echo Hello
+                                }
+                        },
+			stage('say Hi'){
+                        	steps{
+                               		echo Hi
+                                }
+                        }
+                }
+}
